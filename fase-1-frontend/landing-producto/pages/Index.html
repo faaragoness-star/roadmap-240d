@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Landing de producto — Nombre del producto</title>
+
+  <!-- SEO básico -->
+  <meta name="description" content="Landing de un producto que resuelve el problema X con el beneficio Y." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Tu Nombre" />
+</head>
+<body>
+  <header>
+    <h1>Nombre del producto</h1>
+    <nav>
+      <!-- enlaces de navegación si los necesitas -->
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="hero-title">
+      <h2 id="hero-title">Beneficio principal del producto</h2>
+      <p>Aquí explicarás en una frase por qué este producto importa.</p>
+    </section>
+
+    <section aria-labelledby="features-title">
+      <h2 id="features-title">Características clave</h2>
+      <ul>
+        <li>Característica 1</li>
+        <li>Característica 2</li>
+        <li>Característica 3</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="cta-title">
+      <h2 id="cta-title">¿Listo para probarlo?</h2>
+      <button>Call to action</button>
+    </section>
+
+    <!-- Nueva sección Día 2: formularios -->
+    <section aria-labelledby="contact-title">
+      <h2 id="contact-title">Contacto</h2>
+      <p>Déjanos tus datos y te contactaremos para contarte más sobre el producto.</p>
+
+      <form action="/enviar" method="post" novalidate>
+        <div>
+          <label for="name">Nombre</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            minlength="2"
+            placeholder="Tu nombre"
+          />
+        </div>
+
+        <div>
+          <label for="email">Correo electrónico</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            placeholder="tucorreo@ejemplo.com"
+          />
+        </div>
+
+        <div>
+          <label for="message">Mensaje</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            minlength="10"
+            placeholder="Cuéntanos qué necesitas..."
+          ></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; 2025 Tu Marca</small>
+  </footer>
+</body>
+</html>
+
